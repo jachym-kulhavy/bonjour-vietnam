@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F9F7F2">
+  <title>Bonjour Vietnam | Vietnamské bistro ve Starém Brně, Václavská 39</title>
+  <meta name="description" content="Vietnamské bistro na Václavské 39/1 v Brně. Nudle, saláty, restovaná zelenina a rolky z čerstvých surovin od lokálních dodavatelů. Vegan, vegetarián, bez lepku.">
+
+  <!-- Open Graph. og:url a og:image musí být po nasazení absolutní adresa, viz README-DOPLNIT.txt -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:site_name" content="Bonjour Vietnam">
+  <meta property="og:title" content="Bonjour Vietnam | Vietnamské bistro v Brně">
+  <meta property="og:description" content="Zdravé vietnamské jídlo z čerstvých surovin od lokálních dodavatelů. Václavská 39/1, Brno.">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ilustrace průčelí bistra Bonjour Vietnam">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <!-- Písma: Google Fonts s fallbackem. Pro GDPR viz README-DOPLNIT.txt (uložení na vlastní hosting). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Strukturovaná data: jen vyplněná pole. script.js je doplní z dat na začátku souboru (telefon, doba, sítě). -->
+  <script type="application/ld+json" id="ld-json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Bonjour Vietnam",
+    "description": "Vietnamské bistro ve Starém Brně. Nudle, saláty, restovaná zelenina, rolky, dezerty a limonády z čerstvých surovin od lokálních dodavatelů, s veganskou, vegetariánskou a bezlepkovou variantou.",
+    "servesCuisine": "Vietnamská",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Václavská 39/1",
+      "postalCode": "603 00",
+      "addressLocality": "Brno",
+      "addressCountry": "CZ"
+    }
+  }
+  </script>
+</head>
+<body id="top">
+
+<!-- Sprite: ikony a prvky ilustrací, vše vlastní kresba -->
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 10 10 5 19 5c0 9-5 14-14 14z"/><path d="M5 19 15 9"/><path d="M10 14.5V11M13.5 11.5H17"/></symbol>
+  <symbol id="i-bowl" viewBox="0 0 24 24"><path d="M3 11h18c0 5.2-3.8 9-9 9s-9-3.8-9-9z"/><path d="M9 3.5c-1 1.4 1 2.4 0 4M13 3.5c-1 1.4 1 2.4 0 4"/><path d="M9.5 21.5h5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5l3 .6 1.1 4.2-2.1 1.5a12 12 0 0 0 5.2 5.2l1.5-2.1 4.2 1.1.6 3a2.4 2.4 0 0 1-2.4 2.8C10.3 19.8 4.2 13.7 3.8 5.9a2.4 2.4 0 0 1 2.8-2.4z"/></symbol>
+  <symbol id="i-nav" viewBox="0 0 24 24"><path d="M4 11.5 20 4l-7.5 16-2-6.5z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.2 6.8h.01"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 21v-8h2.6l.5-3H14V8.2c0-.9.4-1.5 1.6-1.5H17V4.1A19 19 0 0 0 15 4c-2.3 0-3.9 1.4-3.9 4v2H8.5v3H11v8z"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="art-chair" viewBox="0 0 70 110"><g fill="none" stroke="#1A1A1A" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 57 C13 42 12 26 22 15 C29 8 40 9 39 18"/><path d="M21 64 L14 106"/><path d="M53 64 L60 106"/><path d="M17 86 C31 92 46 92 57 86"/></g><rect x="13" y="54" width="48" height="9" rx="4.5" fill="#78945C"/></symbol>
+<symbol id="art-table" viewBox="0 0 90 90"><ellipse cx="45" cy="14" rx="42" ry="7" fill="#1A1A1A"/><path d="M45 20 V80" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round"/><path d="M22 85 C32 77 58 77 68 85" fill="none" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round"/></symbol>
+</svg>
+
+<a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+
+<main id="obsah">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Bonjour Vietnam, nahoru na začátek stránky">
+          <svg class="icon brand-icon" aria-hidden="true"><use href="#i-leaf"/></svg>
+          <span class="brand-name">Bonjour Vietnam</span>
+        </a>
+        <nav class="site-nav" aria-label="Sekce stránky">
+          <a href="#o-nas">O bistru</a>
+          <a href="#menu">Jídelní lístek</a>
+          <a href="#galerie">Galerie</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+      </header>
+
+      <!-- Odznak Otevřeno / Zavřeno: skrytý, dokud script.js nenajde otevírací dobu -->
+      <div class="open-tag" id="open-tag" hidden role="status">
+        <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+        <span class="open-tag-state" id="open-state"></span>
+        <span class="open-tag-detail" id="open-detail"></span>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title" class="wordmark"><span class="wm-line">Bonjour</span> <span class="wm-line">Vietnam</span></h1>
+          <p class="hero-lead">Vietnamské bistro ve Starém Brně. Zdravé jídlo z čerstvých surovin od lokálních dodavatelů.</p>
+          <div class="actions">
+            <a class="btn" href="#menu">Jídelní lístek</a>
+            <a class="btn btn-ghost" href="#kontakt">Jak se k nám dostanete</a>
+          </div>
+        </div>
+        <figure class="hero-art">
+          <svg class="hero-svg" viewBox="0 0 600 520" role="img" aria-labelledby="hero-art-t" xmlns="http://www.w3.org/2000/svg"><title id="hero-art-t">Ilustrace průčelí bistra: dům s markýzou, bistro stolek se dvěma židlemi, bylinky v květináči a tabule před vchodem</title><rect x="0" y="440" width="600" height="80" rx="0" fill="#EDE8DA"/><rect x="70" y="52" width="460" height="388" fill="#D3E0C2"/><rect x="56" y="38" width="488" height="24" rx="5" fill="#5A7541"/><rect x="70" y="62" width="460" height="8" fill="#78945C" opacity=".55"/><path d="M112 178 V131.0 A35.0 35.0 0 0 1 182 131.0 V178Z" fill="#1A1A1A"/><path d="M147.0 99 V178 M116 141.1 H178" stroke="#D3E0C2" stroke-width="3" fill="none"/><rect x="106" y="178" width="82" height="8" rx="2" fill="#EDE8DA"/><path d="M265 178 V131.0 A35.0 35.0 0 0 1 335 131.0 V178Z" fill="#1A1A1A"/><path d="M300.0 99 V178 M269 141.1 H331" stroke="#D3E0C2" stroke-width="3" fill="none"/><rect x="259" y="178" width="82" height="8" rx="2" fill="#EDE8DA"/><path d="M418 178 V131.0 A35.0 35.0 0 0 1 488 131.0 V178Z" fill="#1A1A1A"/><path d="M453.0 99 V178 M422 141.1 H484" stroke="#D3E0C2" stroke-width="3" fill="none"/><rect x="412" y="178" width="82" height="8" rx="2" fill="#EDE8DA"/><path d="M112 288 V241.0 A35.0 35.0 0 0 1 182 241.0 V288Z" fill="#1A1A1A"/><path d="M147.0 209 V288 M116 251.1 H178" stroke="#D3E0C2" stroke-width="3" fill="none"/><rect x="106" y="288" width="82" height="8" rx="2" fill="#EDE8DA"/><path d="M265 288 V241.0 A35.0 35.0 0 0 1 335 241.0 V288Z" fill="#1A1A1A"/><path d="M300.0 209 V288 M269 251.1 H331" stroke="#D3E0C2" stroke-width="3" fill="none"/><rect x="259" y="288" width="82" height="8" rx="2" fill="#EDE8DA"/><path d="M418 288 V241.0 A35.0 35.0 0 0 1 488 241.0 V288Z" fill="#1A1A1A"/><path d="M453.0 209 V288 M422 251.1 H484" stroke="#D3E0C2" stroke-width="3" fill="none"/><rect x="412" y="288" width="82" height="8" rx="2" fill="#EDE8DA"/><rect x="70" y="302" width="460" height="12" fill="#EDE8DA"/><rect x="100" y="344" width="178" height="96" rx="6" fill="#F9F7F2" stroke="#1A1A1A" stroke-width="6"/><path d="M106 437 L168 347 H194 L132 437Z M204 437 L266 347 H274 V378 L240 437Z" fill="#D3E0C2" opacity=".7"/><path d="M140 350 V366" stroke="#1A1A1A" stroke-width="3"/><path d="M126 380 A14 14 0 0 1 154 380Z" fill="#78945C"/><path d="M238 350 V366" stroke="#1A1A1A" stroke-width="3"/><path d="M224 380 A14 14 0 0 1 252 380Z" fill="#78945C"/><rect x="92.0" y="316" width="28.3" height="30" fill="#5A7541"/><path d="M92.0 346 a13.86 13.86 0 0 0 27.7 0z" fill="#5A7541"/><rect x="119.7" y="316" width="28.3" height="30" fill="#F9F7F2"/><path d="M119.7 346 a13.86 13.86 0 0 0 27.7 0z" fill="#F9F7F2"/><rect x="147.4" y="316" width="28.3" height="30" fill="#5A7541"/><path d="M147.4 346 a13.86 13.86 0 0 0 27.7 0z" fill="#5A7541"/><rect x="175.1" y="316" width="28.3" height="30" fill="#F9F7F2"/><path d="M175.1 346 a13.86 13.86 0 0 0 27.7 0z" fill="#F9F7F2"/><rect x="202.9" y="316" width="28.3" height="30" fill="#5A7541"/><path d="M202.9 346 a13.86 13.86 0 0 0 27.7 0z" fill="#5A7541"/><rect x="230.6" y="316" width="28.3" height="30" fill="#F9F7F2"/><path d="M230.6 346 a13.86 13.86 0 0 0 27.7 0z" fill="#F9F7F2"/><rect x="258.3" y="316" width="28.3" height="30" fill="#5A7541"/><path d="M258.3 346 a13.86 13.86 0 0 0 27.7 0z" fill="#5A7541"/><path d="M326 440 V380 A52 52 0 0 1 430 380 V440Z" fill="#5A7541"/><path d="M340 440 V382 A38 38 0 0 1 416 382 V440Z" fill="#1A1A1A"/><path d="M378 346 V440 M340 400 H416" stroke="#D3E0C2" stroke-width="3" opacity=".7" fill="none"/><circle cx="402" cy="414" r="4" fill="#F9F7F2"/><circle cx="378" cy="300" r="25" fill="#5A7541"/><svg x="360" y="282" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F9F7F2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19C5 10 10 5 19 5c0 9-5 14-14 14z"/><path d="M5 19 14 10"/><path d="M10 14.5V11M13.5 11.5H17"/></svg><ellipse cx="195" cy="494" rx="150" ry="9" fill="#1A1A1A" opacity=".08"/><ellipse cx="492" cy="496" rx="52" ry="7" fill="#1A1A1A" opacity=".08"/><use href="#art-table" x="150" y="402" width="90" height="90"/><use href="#art-chair" x="72" y="382" width="70" height="110"/><g transform="translate(392 0) scale(-1 1)"><use href="#art-chair" x="72" y="382" width="70" height="110"/></g><path d="M434 496 L438 466 H462 L466 496Z" fill="#1A1A1A"/><g transform="translate(450 468) rotate(-62) scale(1.0)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(450 468) rotate(-28) scale(1.0)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(450 468) rotate(0) scale(1.0)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(450 468) rotate(28) scale(1.0)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(450 468) rotate(62) scale(1.0)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(450 468) rotate(-62) scale(0.7)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(450 468) rotate(-28) scale(0.7)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(450 468) rotate(0) scale(0.7)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(450 468) rotate(28) scale(0.7)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(450 468) rotate(62) scale(0.7)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><path d="M474 498 L488 392 H530 L544 498Z" fill="#1A1A1A"/><path d="M496 414 H512" stroke-width="3" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".85"/><path d="M516 414 H522" stroke-dasharray="1 5" stroke-width="3" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".85"/><path d="M494 436 H504 M510 436 H524" stroke-width="3" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".85"/><path d="M494 458 H514" stroke-width="3" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".85"/><path d="M518 458 H526" stroke-width="3" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".85"/><path d="M497 478 q6 -8 12 0 t12 0" stroke-width="3" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".85"/></svg>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ O NÁS ============ -->
+  <section id="o-nas" class="section section-tint" aria-labelledby="about-title">
+    <div class="container about-grid">
+      <div class="about-head">
+        <h2 id="about-title" class="h-display" data-reveal>O bistru</h2>
+        <p class="about-lead">Zdravá alternativa k vietnamskému fastfoodu.</p>
+      </div>
+      <div class="about-body">
+        <p>Bonjour Vietnam vede Thu Hà Nguyễn spolu s přítelem. Vzniklo z touhy po jídle, které je zdravé a poctivé a přitom pořád vietnamské.</p>
+        <p>Vaříme z čerstvých surovin od lokálních dodavatelů. Pro vegany, vegetariány i hosty, kteří nejedí lepek, máme varianty.</p>
+        <ul class="offer" aria-label="Co vaříme">
+          <li>Nudle</li>
+          <li>Saláty</li>
+          <li>Restovaná zelenina</li>
+          <li>Letní a jarní rolky</li>
+          <li>Originální dezerty a limonády</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JÍDELNÍ LÍSTEK ============ -->
+  <section id="menu" class="section" aria-labelledby="menu-title">
+    <div class="container">
+      <h2 id="menu-title" class="h-display" data-reveal>Jídelní lístek</h2>
+
+      <div class="board" id="board">
+        <noscript><p class="board-noscript">Jídelní lístek se načítá pomocí JavaScriptu. Zapněte ho, nebo nám zavolejte.</p></noscript>
+        <div class="board-grid">
+          <div class="board-side">
+            <div class="diet-filter" id="diet-filter" role="group" aria-label="Filtr podle diety"></div>
+          </div>
+          <div class="board-main">
+            <p class="board-note" id="board-note" hidden></p>
+            <div class="tabs" id="menu-tabs" role="tablist" aria-label="Kategorie jídelního lístku"></div>
+            <div class="board-panel" id="menu-panel" role="tabpanel" tabindex="0"></div>
+            <p class="visually-hidden" id="menu-status" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="legend" id="allergen-legend" hidden>
+          <h3 class="legend-title">Alergeny</h3>
+          <ol class="legend-list" id="allergen-list"></ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERIE ============ -->
+  <section id="galerie" class="section section-tint" aria-labelledby="gallery-title">
+    <div class="container">
+      <h2 id="gallery-title" class="h-display" data-reveal>Galerie</h2>
+      <div class="gallery" id="gallery">
+        <button class="tile tile-lg" type="button" aria-label="Zvětšit: interiér se stoly a židlemi">
+          <span class="tile-art"><svg viewBox="0 0 400 300" role="img" aria-label="Zástupná ilustrace: interiér bistra se stolkem, židlemi a tabulí na zdi" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#D3E0C2"/><rect y="170" width="400" height="64" fill="#5A7541"/><rect y="234" width="400" height="66" fill="#EDE8DA"/><rect x="34" y="30" width="170" height="112" rx="6" fill="#1A1A1A" stroke="#EDE8DA" stroke-width="6"/><path d="M52 58 h46" stroke-width="4" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".88"/><path d="M106 58 H148" stroke-width="3" stroke-dasharray="1 7" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".88"/><path d="M156 58 h16" stroke-width="4" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".88"/><path d="M52 82 h62" stroke-width="4" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".88"/><path d="M122 82 H148" stroke-width="3" stroke-dasharray="1 7" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".88"/><path d="M156 82 h16" stroke-width="4" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".88"/><path d="M52 106 h38" stroke-width="4" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".88"/><path d="M98 106 H148" stroke-width="3" stroke-dasharray="1 7" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".88"/><path d="M156 106 h16" stroke-width="4" stroke="#F9F7F2" stroke-linecap="round" fill="none" opacity=".88"/><path d="M266 0 V70" stroke="#1A1A1A" stroke-width="3"/><path d="M242 96 A24 24 0 0 1 290 96Z" fill="#78945C"/><ellipse cx="266" cy="97" rx="9" ry="4" fill="#F9F7F2"/><path d="M340 0 V52" stroke="#1A1A1A" stroke-width="3"/><path d="M316 78 A24 24 0 0 1 364 78Z" fill="#78945C"/><ellipse cx="340" cy="79" rx="9" ry="4" fill="#F9F7F2"/><ellipse cx="270" cy="282" rx="118" ry="8" fill="#1A1A1A" opacity=".08"/><use href="#art-table" x="226" y="196" width="90" height="90"/><use href="#art-chair" x="150" y="176" width="70" height="110"/><g transform="translate(542 0) scale(-1 1)"><use href="#art-chair" x="150" y="176" width="70" height="110"/></g></svg></span>
+          <span class="tile-note">Foto: interiér se stoly a židlemi</span>
+        </button>
+        <button class="tile" type="button" aria-label="Zvětšit: fasáda domu na Václavské">
+          <span class="tile-art"><svg viewBox="0 0 400 300" role="img" aria-label="Zástupná ilustrace: fasáda domu s okny, markýzou a truhlíkem s bylinkami" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#D3E0C2"/><rect y="258" width="400" height="42" fill="#EDE8DA"/><rect y="14" width="400" height="16" fill="#5A7541"/><path d="M36 216 V116.0 A50.0 50.0 0 0 1 136 116.0 V216Z" fill="#1A1A1A"/><path d="M86.0 69 V216 M40 148.5 H132" stroke="#D3E0C2" stroke-width="3" fill="none"/><path d="M264 216 V116.0 A50.0 50.0 0 0 1 364 116.0 V216Z" fill="#1A1A1A"/><path d="M314.0 69 V216 M268 148.5 H360" stroke="#D3E0C2" stroke-width="3" fill="none"/><rect x="24" y="40" width="124" height="22" fill="#1A1A1A"/><rect x="252" y="40" width="124" height="22" fill="#1A1A1A"/><rect x="24.0" y="40" width="25.4" height="26" fill="#5A7541"/><path d="M24.0 66 a12.40 12.40 0 0 0 24.8 0z" fill="#5A7541"/><rect x="48.8" y="40" width="25.4" height="26" fill="#F9F7F2"/><path d="M48.8 66 a12.40 12.40 0 0 0 24.8 0z" fill="#F9F7F2"/><rect x="73.6" y="40" width="25.4" height="26" fill="#5A7541"/><path d="M73.6 66 a12.40 12.40 0 0 0 24.8 0z" fill="#5A7541"/><rect x="98.4" y="40" width="25.4" height="26" fill="#F9F7F2"/><path d="M98.4 66 a12.40 12.40 0 0 0 24.8 0z" fill="#F9F7F2"/><rect x="123.2" y="40" width="25.4" height="26" fill="#5A7541"/><path d="M123.2 66 a12.40 12.40 0 0 0 24.8 0z" fill="#5A7541"/><rect x="252.0" y="40" width="25.4" height="26" fill="#5A7541"/><path d="M252.0 66 a12.40 12.40 0 0 0 24.8 0z" fill="#5A7541"/><rect x="276.8" y="40" width="25.4" height="26" fill="#F9F7F2"/><path d="M276.8 66 a12.40 12.40 0 0 0 24.8 0z" fill="#F9F7F2"/><rect x="301.6" y="40" width="25.4" height="26" fill="#5A7541"/><path d="M301.6 66 a12.40 12.40 0 0 0 24.8 0z" fill="#5A7541"/><rect x="326.4" y="40" width="25.4" height="26" fill="#F9F7F2"/><path d="M326.4 66 a12.40 12.40 0 0 0 24.8 0z" fill="#F9F7F2"/><rect x="351.2" y="40" width="25.4" height="26" fill="#5A7541"/><path d="M351.2 66 a12.40 12.40 0 0 0 24.8 0z" fill="#5A7541"/><rect x="28" y="216" width="116" height="30" rx="4" fill="#5A7541"/><g transform="translate(58 216) rotate(-62) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(58 216) rotate(-28) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(58 216) rotate(0) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(58 216) rotate(28) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(58 216) rotate(62) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(114 216) rotate(-62) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(114 216) rotate(-28) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(114 216) rotate(0) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(114 216) rotate(28) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(114 216) rotate(62) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><rect x="256" y="216" width="116" height="30" rx="4" fill="#5A7541"/><g transform="translate(286 216) rotate(-62) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(286 216) rotate(-28) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(286 216) rotate(0) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(286 216) rotate(28) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(286 216) rotate(62) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(342 216) rotate(-62) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(342 216) rotate(-28) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(342 216) rotate(0) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(342 216) rotate(28) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(342 216) rotate(62) scale(0.8)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><circle cx="200" cy="130" r="30" fill="#5A7541"/><svg x="178" y="108" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#F9F7F2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19C5 10 10 5 19 5c0 9-5 14-14 14z"/><path d="M5 19 14 10"/><path d="M10 14.5V11M13.5 11.5H17"/></svg></svg></span>
+          <span class="tile-note">Foto: fasáda domu</span>
+        </button>
+        <button class="tile" type="button" aria-label="Zvětšit: miska nudlí s bylinkami">
+          <span class="tile-art"><svg viewBox="0 0 400 300" role="img" aria-label="Zástupná ilustrace: miska nudlí s bylinkami a plátkem limety" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#78945C"/><path d="M160 92 q-10 -14 0 -26 t0 -26" fill="none" stroke="#F9F7F2" stroke-width="5" stroke-linecap="round" opacity=".7"/><path d="M200 92 q-10 -14 0 -26 t0 -26" fill="none" stroke="#F9F7F2" stroke-width="5" stroke-linecap="round" opacity=".7"/><path d="M240 92 q-10 -14 0 -26 t0 -26" fill="none" stroke="#F9F7F2" stroke-width="5" stroke-linecap="round" opacity=".7"/><path d="M96 150 C120 112 146 176 176 126 S238 176 262 124 S296 150 306 150" fill="none" stroke="#EDE8DA" stroke-width="9" stroke-linecap="round"/><path d="M104 152 C128 124 150 168 180 138 S240 166 268 134" fill="none" stroke="#F9F7F2" stroke-width="8" stroke-linecap="round"/><g transform="translate(150 150) rotate(-62) scale(1.0)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(150 150) rotate(-28) scale(1.0)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#D3E0C2"/></g><g transform="translate(150 150) rotate(0) scale(1.0)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(150 150) rotate(28) scale(1.0)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#D3E0C2"/></g><g transform="translate(150 150) rotate(62) scale(1.0)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(262 150) rotate(-62) scale(0.9)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#D3E0C2"/></g><g transform="translate(262 150) rotate(-28) scale(0.9)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(262 150) rotate(0) scale(0.9)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#D3E0C2"/></g><g transform="translate(262 150) rotate(28) scale(0.9)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#5A7541"/></g><g transform="translate(262 150) rotate(62) scale(0.9)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#D3E0C2"/></g><circle cx="212" cy="140" r="22" fill="#D3E0C2" stroke="#5A7541" stroke-width="5"/><path d="M212 118 V162 M190 140 H234 M196 124 L228 156 M228 124 L196 156" stroke="#5A7541" stroke-width="2.5" fill="none"/><path d="M68 150 H332 C332 226 282 266 200 266 C118 266 68 226 68 150Z" fill="#F9F7F2"/><path d="M80 178 C120 200 280 200 320 178" fill="none" stroke="#5A7541" stroke-width="7" stroke-linecap="round"/><rect x="156" y="262" width="88" height="14" rx="6" fill="#F9F7F2"/><path d="M300 58 L352 232 M318 52 L372 226" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/></svg></span>
+          <span class="tile-note">Foto: miska nudlí</span>
+        </button>
+        <button class="tile" type="button" aria-label="Zvětšit: letní a jarní rolky">
+          <span class="tile-art"><svg viewBox="0 0 400 300" role="img" aria-label="Zástupná ilustrace: talíř s letními rolkami a miska s omáčkou" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#EDE8DA"/><circle cx="190" cy="156" r="118" fill="#F9F7F2"/><circle cx="190" cy="156" r="96" fill="none" stroke="#EDE8DA" stroke-width="4"/><g transform="translate(176 108) rotate(-9)"><rect x="-76" y="-23" width="152" height="46" rx="23" fill="#D3E0C2"/><path d="M-52 -12 H48 M-56 0 H52 M-50 12 H46" stroke="#78945C" stroke-width="5" stroke-linecap="round" opacity=".8"/><circle cx="-70" cy="0" r="12" fill="#5A7541"/><circle cx="70" cy="0" r="12" fill="#78945C"/></g><g transform="translate(194 158) rotate(6)"><rect x="-76" y="-23" width="152" height="46" rx="23" fill="#D3E0C2"/><path d="M-52 -12 H48 M-56 0 H52 M-50 12 H46" stroke="#78945C" stroke-width="5" stroke-linecap="round" opacity=".8"/><circle cx="-70" cy="0" r="12" fill="#5A7541"/><circle cx="70" cy="0" r="12" fill="#78945C"/></g><g transform="translate(180 208) rotate(-5)"><rect x="-76" y="-23" width="152" height="46" rx="23" fill="#D3E0C2"/><path d="M-52 -12 H48 M-56 0 H52 M-50 12 H46" stroke="#78945C" stroke-width="5" stroke-linecap="round" opacity=".8"/><circle cx="-70" cy="0" r="12" fill="#5A7541"/><circle cx="70" cy="0" r="12" fill="#78945C"/></g><circle cx="318" cy="236" r="40" fill="#1A1A1A"/><ellipse cx="318" cy="236" rx="30" ry="30" fill="#5A7541"/><g transform="translate(318 238) rotate(-62) scale(0.55)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#D3E0C2"/></g><g transform="translate(318 238) rotate(-28) scale(0.55)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(318 238) rotate(0) scale(0.55)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#D3E0C2"/></g><g transform="translate(318 238) rotate(28) scale(0.55)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#78945C"/></g><g transform="translate(318 238) rotate(62) scale(0.55)"><path d="M0 0 C-9 -12 -8 -28 0 -38 C8 -28 9 -12 0 0Z" fill="#D3E0C2"/></g></svg></span>
+          <span class="tile-note">Foto: rolky</span>
+        </button>
+        <button class="tile" type="button" aria-label="Zvětšit: vietnamská káva překapávaná v hrnku">
+          <span class="tile-art"><svg viewBox="0 0 400 300" role="img" aria-label="Zástupná ilustrace: hrnek s kovovým filtrem na překapávanou vietnamskou kávu" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#D3E0C2"/><rect y="256" width="400" height="44" fill="#EDE8DA"/><ellipse cx="190" cy="262" rx="104" ry="8" fill="#1A1A1A" opacity=".1"/><path d="M150 74 q-9 -12 0 -22 t0 -22" fill="none" stroke="#5A7541" stroke-width="5" stroke-linecap="round" opacity=".55"/><path d="M190 74 q-9 -12 0 -22 t0 -22" fill="none" stroke="#5A7541" stroke-width="5" stroke-linecap="round" opacity=".55"/><path d="M230 74 q-9 -12 0 -22 t0 -22" fill="none" stroke="#5A7541" stroke-width="5" stroke-linecap="round" opacity=".55"/><path d="M130 164 H250 V228 a30 30 0 0 1 -30 30 H160 a30 30 0 0 1 -30 -30Z" fill="#F9F7F2"/><path d="M250 180 h18 a24 24 0 0 1 0 48 h-18" fill="none" stroke="#F9F7F2" stroke-width="14"/><rect x="130" y="164" width="120" height="22" fill="#1A1A1A"/><rect x="116" y="152" width="148" height="12" rx="5" fill="#1A1A1A"/><path d="M142 152 V112 H238 V152Z" fill="#1A1A1A"/><rect x="146" y="92" width="88" height="20" rx="8" fill="#5A7541"/><circle cx="190" cy="86" r="9" fill="#5A7541"/><path d="M158 124 H222 M158 136 H222" stroke="#78945C" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></span>
+          <span class="tile-note">Foto: káva v hrnku</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAKT ============ -->
+  <section id="kontakt" class="section section-ink" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div class="contact-main">
+        <h2 id="contact-title" class="h-display" data-reveal>Kontakt</h2>
+        <address class="contact-address">
+          <span class="addr-street">Václavská 39/1</span>
+          <span class="addr-city">603 00 Brno, Staré Brno</span>
+        </address>
+        <div class="actions">
+          <a class="btn" id="link-mapy" href="https://mapy.cz/zakladni?q=V%C3%A1clavsk%C3%A1%2039%2F1%2C%20Brno" target="_blank" rel="noopener">Otevřít v Mapy.cz</a>
+          <a class="btn btn-ghost-light" id="link-google" href="https://www.google.com/maps/search/?api=1&amp;query=V%C3%A1clavsk%C3%A1%2039%2F1%2C%20Brno" target="_blank" rel="noopener">Otevřít v Google Maps</a>
+        </div>
+      </div>
+      <dl class="contact-list">
+        <div class="contact-row" id="row-hours" hidden>
+          <dt><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Otevírací doba</dt>
+          <dd id="hours-out"></dd>
+        </div>
+        <div class="contact-row" id="row-phone" hidden>
+          <dt><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Telefon</dt>
+          <dd id="phone-out"></dd>
+        </div>
+        <div class="contact-row" id="row-email" hidden>
+          <dt><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>E-mail</dt>
+          <dd id="email-out"></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p class="footer-brand"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg>Bonjour Vietnam</p>
+    <div class="socials" id="socials" aria-label="Sociální sítě"></div>
+    <p class="footer-copy">&copy; <span id="year">2026</span> Bonjour Vietnam</p>
+  </div>
+</footer>
+
+<!-- Přilepená lišta na mobilu -->
+<nav class="dock" aria-label="Rychlé akce">
+  <a class="btn dock-btn" id="dock-call" href="#" hidden><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Zavolat</a>
+  <a class="btn dock-btn" id="dock-nav" href="https://www.google.com/maps/dir/?api=1&amp;destination=V%C3%A1clavsk%C3%A1%2039%2F1%2C%20Brno" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-nav"/></svg>Navigace</a>
+</nav>
+
+<!-- Lightbox -->
+<dialog class="lightbox" id="lightbox" aria-label="Zvětšená fotografie">
+  <div class="lb-stage" id="lb-stage"></div>
+  <button class="lb-btn lb-close" type="button" id="lb-close" aria-label="Zavřít"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  <button class="lb-btn lb-prev" type="button" id="lb-prev" aria-label="Předchozí"><svg class="icon" aria-hidden="true"><use href="#i-prev"/></svg></button>
+  <button class="lb-btn lb-next" type="button" id="lb-next" aria-label="Další"><svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></button>
+</dialog>
+
+<script src="menu-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
